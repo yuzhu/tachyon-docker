@@ -11,7 +11,6 @@ RUN mkdir -p /opt && \
     rm tachyon-$TACHYON_VERSION-bin.tar.gz && \
     ln -s tachyon-$TACHYON_VERSION tachyon && \
     cd tachyon && \
-    mvn install && \
-    echo Tachyon installed in /opt
+    echo Tachyon source installed in /opt
 
 ENV PATH $PATH:/opt/tachyon/bin
